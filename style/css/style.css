@@ -1,0 +1,245 @@
+body {
+    background-color: #000;
+}
+.header{
+    width: 100%;
+    height: 50px;
+    background: #000;
+}
+.logo{
+    height: 100%;
+    width: 6%; 
+    background: #efefef;
+    display: inline-block;
+    float: left;
+}
+.title{
+    height: 100%;
+    width: 64%;
+    background: #efefef;
+    display: inline-block;
+    float: left;
+
+}
+.search{
+    height: 100%;
+    width: 30%; 
+    background: #efefef;
+    display: inline-block;
+    float: left;
+}
+.line{
+    margin-top: 2%;
+    margin-bottom: 2%;
+    height: 60%;
+    width: 1px; 
+    background: #222222;
+   
+    text-align: center;
+    display: inline-block;
+    float: left;
+
+}
+.title-text{
+    text-align: center;
+    display: inline-block;
+    float: left;
+}
+.wapper{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+.fram-all{
+    height: 550px;
+    width: 90%;
+    background: #ffffff;
+
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 0 auto;
+    padding: 10px;
+}
+.text-all{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.h1-text{
+    color: #eb2a3f;
+    font-weight: 600;
+    font-size: 25pt;
+}
+.h3-text{
+    color: #313131;
+    font-weight: 300;
+    font-size: 17pt;
+}
+.container-content{
+height: 100%;
+width: 85%;
+margin: 0 auto;
+
+}
+.content-h3{
+    margin-top: 20px;
+    text-align: left;
+    font-size: 14pt;
+    font-weight: 500;
+}
+/* +++++++++++ radio ++++++++++++++++ */
+
+.radio-wapper{
+    border: solid 4px #ededed;
+    width: 100%;
+    height: 120px;
+}
+.this-radio{
+    display: inline-block;
+
+    
+
+    text-align: right;
+}
+.text-radio{
+    display: inline-block;
+
+    margin-left: 10px;
+    text-align: left;
+    width: 50%;
+    font-weight: 400;
+    height: 10px;
+}
+.sub-ra{
+
+    width: 50%;
+    height: 10px;
+}
+.sub-text-radio{
+
+    text-align: center;
+    width: 50%;
+    font-weight: 200;
+    height: 10px;
+    font-size: 9pt;
+
+}
+.radio-box{
+    height: 50px;
+    width: 50%;
+    padding: 5px;
+    display: inline-block;
+    float: left;
+    
+}
+
+/* +++++++++++++++ end radio +++++++++++++ */
+
+
+/* ++++++++++++++++++ history ++++++++++++++++ */
+.history{
+    height: 100%;
+    width: 50%;
+    text-align: left;
+
+    display: inline-block;
+float: left;
+}
+
+.first-last{
+    height: 100%;
+    width: 100%;
+    
+}
+.input-style{
+    border: 1px solid #d0d0d0;
+    border-radius: 4px;
+    width: 85%;
+}
+.text-rigth{
+margin-left: 15%;
+}
+.box-first-last{
+    width: 50%;
+    height: 50px;
+    display: inline-block;
+    float: left;
+}
+.address{
+    width: 100%;
+    height: 100%;
+    margin-top: 10px;
+    display: inline-block;
+    float: left;
+}
+.address-style{
+    width: 100%;
+    border: 1px solid #d0d0d0;
+    border-radius: 4px;
+
+}
+.last-text{
+    width: 100%;
+    height: 10px;
+    font-size: 10pt;
+    color: #585858;
+}
+.add-text{
+    width: 100%;
+    height: 10px;
+}
+.email{
+    width: 100%;
+    height: 100%;
+    margin-top: 10px;
+    display: inline-block;
+    float: left;
+    
+}
+
+/* ++++++++++++++++++++ end history +++++++++++++++++++++ */
+
+
+.location{
+    height: 100%;
+    width: 50%;
+    text-align: left;
+
+    display: inline-block;
+    float: left;
+    
+}
+.location-content-h3{
+
+    text-align: left;
+    font-size: 13pt;
+    font-weight: 400;
+    margin-left: 20px;
+}
+
+.this-map{
+    width: 95%;
+    height: 150px;
+    margin-left: 20px;
+    background: red;
+}
+.submit-all{
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 20px;
+    display: inline-block;
+    float: left;
+}
+.submit-style{
+    border: 1px  #d0d0d0;
+    border-radius: 25px;
+    font-size: 9pt;
+    padding: 5px;
+    background: #a7a7a7;
+    color: #fff;
+    font-weight: 400;
+    width: 10%;
+}
+.red-style{
+    background: #ec2b3c;
+}

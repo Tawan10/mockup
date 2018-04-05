@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 class SearchBar extends Component {
     render() {
         return (
-            <div classNane="container-fluid">
+            <div classNane="container">
                 <nav className="navbar navbar-light bg-light justify-content-between">
                     <a className="navbar-brand">Fiber To Your Home</a>
                     <form className="form-inline">
