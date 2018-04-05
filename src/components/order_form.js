@@ -1,18 +1,10 @@
 import React, { Component } from 'react'
+import {Link} from 'react-router-dom'
 
 class OrderForm extends Component {
     render() {
         return (
             <div>
-
-        <div className="header">
-            <div className="logo"></div>
-            <div className="title">
-                <div className="line"></div>
-                <h2 className="title-text">Fiber to Your Home</h2>
-            </div>
-            <div className="search"></div>
-        </div>
             <div className="container">
         <div className="wapper">
             
@@ -91,8 +83,12 @@ class OrderForm extends Component {
                                 </div>
                         </div>
                         <div className="submit-all">
-                                <input type="submit" value="CANCEL" className="submit-style"/>
-                                <input type="submit" value="SUBMIT" className="submit-style red-style"/>
+                        <Link className="submit-style" to="/">
+                            CANCEL
+                        </Link>
+                            <Link className="submit-style red-style" to="/order/submit">
+                                Submit
+                            </Link>
                         </div>
                     </form> 
                 </div>    

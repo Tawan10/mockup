@@ -4,6 +4,8 @@ import { Provider } from 'react-redux';
 import { createStore, applyMiddleware } from 'redux';
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
 
+import EmailTemplate from "./components/emailtemplate";
+import SubmitForm from "./components/submitform";
 import OrderForm from './components/order_form';
 import SearchBar from './components/search_bar'
 import App from './components/app'
@@ -17,6 +19,8 @@ ReactDOM.render(
     <div>
     <SearchBar/>
       <Switch>
+        <Route path="/order/submit/email" component={EmailTemplate} />
+        <Route path="/order/submit" component={SubmitForm} />
         <Route path="/order/new" component={OrderForm} />
         <Route path="/" component={App} />
       </Switch>
