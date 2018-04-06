@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import {Link} from 'react-router-dom'
-
+import '../style/css/style.css'
 class OrderForm extends Component {
     render() {
         return (
@@ -102,13 +102,5 @@ class OrderForm extends Component {
         )
     }
 }
-
-const headerStyle = {
-    color: 'red',
-    textAlign: 'center'
-  }
-  const subheaderStyle = {
-    textAlign: 'center'
-  }
 
 export default OrderForm

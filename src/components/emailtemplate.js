@@ -6,7 +6,7 @@ class EmailTemplate extends Component {
         return (
             <div className="container">
              <Link to="/">
-                    <img src="https://s4.aconvert.com/convert/p3r68-cdx67/cb3d4-5zkb8.svg" hight="100%" width="100%" />
+                    <img src="https://s4.aconvert.com/convert/p3r68-cdx67/cbrth-g9dce.svg" hight="100%" width="100%" alt=""/>
                 </Link>
             </div>     
         )

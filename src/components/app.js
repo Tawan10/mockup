@@ -15,7 +15,7 @@ export default class App extends Component {
           style="mapbox://styles/mapbox/streets-v9"
           containerStyle={{
             height: "75vh",
-            width: "60vw",
+            width: "45vw",
             padding: "0px",
             margin: "0px",
       }}>
