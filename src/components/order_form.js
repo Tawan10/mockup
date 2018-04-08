@@ -1,6 +1,9 @@
 import React, { Component } from 'react'
 import {Link} from 'react-router-dom'
 import '../style/css/style.css'
+import Popup from "reactjs-popup";
+import EmailTemplate from '../image/06EmailTemplate.jpg'
+
 class OrderForm extends Component {
     render() {
         return (
@@ -45,7 +48,7 @@ class OrderForm extends Component {
 
                         </form> 
                     </div>
-                <h3 className="content-h3">Please provide onformation</h3>
+                <h3 className="content-h3">Please provide information</h3>
                 <div  className="input-all">
                     <form action="#">
                        <div className="history">
@@ -86,9 +89,18 @@ class OrderForm extends Component {
                         <Link className="submit-style" to="/">
                             CANCEL
                         </Link>
-                            <Link className="submit-style red-style" to="/order/submit">
-                                Submit
-                            </Link>
+                        <Popup trigger={
+                        <button className="submit-style red-style"> Submit </button>
+                        // <Link className="submit-style red-style" to="/order/submit">
+                        //         Submit
+                        // </Link>
+                    } modal>
+                        {close => (
+                            <img src={EmailTemplate} hight="100%" width="90%" alt="" />
+                           
+                        )}
+                          </Popup>
+                            
                         </div>
                     </form> 
                 </div>    
