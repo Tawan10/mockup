@@ -1,32 +1,31 @@
-import React, { Component } from 'react';
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { Provider } from 'react-redux';
-import { createStore, applyMiddleware } from 'redux';
-import { BrowserRouter, Route, Switch } from 'react-router-dom'
+import React, { Component } from 'react'
+import { Link, BrowserRouter, Route, Switch } from 'react-router-dom'
+import ReactMapboxGl, { Layer, Feature } from "react-mapbox-gl"
 
-import Map from './components/map'
-import EmailTemplate from "./components/emailtemplate";
-import SubmitForm from "./components/submitform";
-import OrderForm from './components/order_form';
-import SearchBar from './components/search_bar'
+import EmailTemplate from './emailtemplate'
+import OrderForm from './order_form'
+import SubmitForm from './submitform'
+import Maps from './map'
+import SearchBar from './search_bar'
+import '../style/css/mapstyle.css'
 
-class App extends Component {
+
+export default class App extends Component {
+
   render() {
     return (
       <BrowserRouter>
-        <div>
-          <SearchBar />
-          <Switch>
-            <Route path="/order/submit/email" component={EmailTemplate} />
-            <Route path="/order/submit" component={SubmitForm} />
-            <Route path="/order/new" component={OrderForm} />
-            <Route path="/" component={Map} />
-          </Switch>
-        </div>
+      <div>
+      <SearchBar/>
+        <Switch>
+          <Route path="/order/submit/email" component={EmailTemplate} />
+          <Route path="/order/submit" component={SubmitForm} />
+          <Route path="/order/new" component={OrderForm} />
+          <Route path="/" component={Maps} />
+        </Switch>
+  
+      </div>
       </BrowserRouter>
     );
   }
 }
-
-export default App;

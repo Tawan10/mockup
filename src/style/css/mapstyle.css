@@ -1,0 +1,27 @@
+.container-map{
+
+}
+
+.map-style{
+    width: 100%;
+    height: 100%;
+
+}
+.wapper-button{
+    height: 100px;
+    width: 100px;
+    background: #000;
+}
+.buttonOrder{
+    
+    
+bottom: 0px;
+left: 0%;
+}
+.wapper-buttonOrder{
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    bottom: 0px;
+    text-align: center;
+}

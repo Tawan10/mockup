@@ -1,12 +1,12 @@
 import React, { Component } from 'react'
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import { Link } from 'react-router-dom'
 import ReactMapboxGl, { Layer, Feature } from "react-mapbox-gl"
-
+import '../style/css/mapstyle.css'
 const Map = ReactMapboxGl({
   accessToken: "pk.eyJ1Ijoic2hhbmEwNDQiLCJhIjoiY2pmbWdudnRuMHRteTMybnYzZ2ZpNmo4cyJ9.uksnzY30vBr2sJeC1SjHkg"
 });
 
-export default class Map extends Component {
+export default class Maps extends Component {
 
   render() {
     return (
