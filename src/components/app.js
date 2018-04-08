@@ -1,40 +1,32 @@
-import React, { Component } from 'react'
-import { Link } from 'react-router-dom'
-import ReactMapboxGl, { Layer, Feature } from "react-mapbox-gl"
+import React, { Component } from 'react';
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { Provider } from 'react-redux';
+import { createStore, applyMiddleware } from 'redux';
+import { BrowserRouter, Route, Switch } from 'react-router-dom'
 
-const Map = ReactMapboxGl({
-  accessToken: "pk.eyJ1Ijoic2hhbmEwNDQiLCJhIjoiY2pmbWdudnRuMHRteTMybnYzZ2ZpNmo4cyJ9.uksnzY30vBr2sJeC1SjHkg"
-});
+import Map from './components/map'
+import EmailTemplate from "./components/emailtemplate";
+import SubmitForm from "./components/submitform";
+import OrderForm from './components/order_form';
+import SearchBar from './components/search_bar'
 
-export default class App extends Component {
-
+class App extends Component {
   render() {
     return (
-      <div>
-        <Map
-          style="mapbox://styles/mapbox/streets-v9"
-          containerStyle={{
-            height: "75vh",
-            width: "45vw",
-            padding: "0px",
-            margin: "0px",
-      }}>
-          <Layer
-            type="symbol"
-            id="marker"
-            layout={{ "icon-image": "marker-15" }}>
-            <Feature coordinates={[-0.481747846041145, 51.3233379650232]}/>
-          </Layer>
-      </Map>
-        <div className="text-xs-right" style={divStyle}>
-          <Link className="btn btn-danger btn-lg sharp" to="/order/new">
-            Order Anyware
-          </Link>
+      <BrowserRouter>
+        <div>
+          <SearchBar />
+          <Switch>
+            <Route path="/order/submit/email" component={EmailTemplate} />
+            <Route path="/order/submit" component={SubmitForm} />
+            <Route path="/order/new" component={OrderForm} />
+            <Route path="/" component={Map} />
+          </Switch>
         </div>
-      </div>
+      </BrowserRouter>
     );
   }
 }
-const divStyle = {
-  textAlign: 'center',
-}
+
+export default App;
