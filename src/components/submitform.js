@@ -1,15 +1,29 @@
-import React, { Component } from 'react'
-import { Link } from 'react-router-dom'
+import React, { Component } from "react";
+import { Link } from "react-router-dom";
 
 class SubmitForm extends Component {
-    render() {
-        return (
-            <div className="container">
-             <Link to="/order/submit/email">
-                    <img src="https://s4.aconvert.com/convert/p3r68-cdx67/cbl0f-ck5xu.svg" hight="100%" width="100%" alt="" />
-                </Link>
-            </div>   
-        )
-    }
+  render() {
+    return (
+      <div className="container">
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+            <a href="#" class="card-link">
+              Card link
+            </a>
+            <a href="#" class="card-link">
+              Another link
+            </a>
+          </div>
+        </div>
+        <Link to="/order/submit/email" />
+      </div>
+    );
+  }
 }
-export default SubmitForm
+export default SubmitForm;
