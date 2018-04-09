@@ -200,6 +200,43 @@ class OrderForm extends Component {
                           <div>
                             <h2 style={submitStyle}>CONFIRM</h2>
                             <h3>FIBER SERVICE ORDER</h3>
+                            <div style={tableStyle}>
+                            <table>
+                              <tr>
+                                <td><b>First Name:</b></td>
+                                <td>Poomin T.</td>
+                              </tr>
+                              <tr>
+                              <td><b>Last Name:</b></td>
+                                <td>Chumyen</td>
+                              </tr>
+                              <tr>
+                              <td><b>Address:</b></td>
+                                <td>32nd Floor, Athenee Tower, 63 Wireless Road, Lumpini, <br/>Pathuwan, Bangkok 10330 Thailand</td>
+                              </tr>
+                              <tr>
+                              <td><b>Email:</b></td>
+                                <td>PoominT@hotmail.com</td>
+                              </tr>
+                              <tr>
+                              <td><b>Tel:</b></td>
+                                <td>0898769765</td>
+                              </tr>
+                              <tr>
+                              <td><b>Inquiry Location:</b></td>
+                                <td>17.964133 102.609449</td>
+                              </tr>
+                              <b>We Send you emails to confirm your order and to nitify you when you order has shipped</b>
+                            </table>
+                            <div className="submit-all">
+                            <Link className="submit-style" to="/">
+                              CANCEL
+                            </Link>
+                            <Link className="submit-style red-style" to="/">
+                              CONFIRM
+                            </Link>
+                            </div>
+                            </div>
                           </div>
                         )}
                       </Popup>
@@ -218,4 +255,8 @@ class OrderForm extends Component {
 export default OrderForm;
 const submitStyle = {
   color: "red"
+};
+
+const tableStyle = {
+  textAlign: "center"
 };

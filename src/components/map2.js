@@ -22,9 +22,9 @@ const MyMapComponent = compose(
   withScriptjs,
   withGoogleMap
 )(props => (
-  <GoogleMap defaultZoom={8} defaultCenter={{ lat: -34.397, lng: 150.644 }}>
+  <GoogleMap defaultZoom={8} defaultCenter={{ lat: 17.964133, lng: 102.609449 }}>
     <Marker
-      position={{ lat: -34.397, lng: 150.644 }}
+      position={{ lat: 17.964133, lng: 102.609449 }}
       onClick={props.onToggleOpen}
     >
       {props.isOpen && (
