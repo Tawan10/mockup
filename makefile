@@ -1,13 +1,21 @@
+.PHONY: pack upload deploy status
 
-build:
-	docker build -t gcr.io/yai-zero/fnm_mock .
+TAG?=$(shell git rev-list HEAD --max-count=1 --abbrev-commit)
+PROJECT_ID=yai-zero
+APP_NAME=fnm-mock
 
-push:
-	gcloud docker -- push gcr.io/yai-zero/
-	
-deploy:
-	kubectl create -f k8s/frontend.yaml
-	kubectl create -f k8s/services.yaml
+export TAG
+
+status:
 	kubectl get deployments
 	kubectl get services
 	kubectl get pods
+
+pack:
+	docker build -t gcr.io/${PROJECT_ID}/${APP_NAME}:$(TAG) .
+
+upload: ;
+	gcloud docker -- push gcr.io/${PROJECT_ID}/${APP_NAME}:$(TAG)
+
+deploy:
+	envsubst < k8s/deployment.yml | kubectl apply -f -

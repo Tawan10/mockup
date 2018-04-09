@@ -1,0 +1,42 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: fnm-mock
+  labels:
+    app: fnm-mock
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: fnm-mock
+        tier: frontend
+    spec:
+      containers:
+      - name: fnm-mock-app
+        image: gcr.io/yai-zero/fnm_mock:${TAG}
+        imagePullPolicy: Always
+        ports:
+        - name: http-server
+          containerPort: 8080
+        env:
+          - name: PROJECT_ID
+            value: yai-zero
+
+
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: fnm-mock
+  labels:
+    app: fnm-mock
+    tier: frontend
+spec:
+  type: LoadBalancer
+  ports:
+  - port: 80
+    targetPort: http-server
+  selector:
+    app: fnm-mock
+    tier: frontend

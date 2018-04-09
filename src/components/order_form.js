@@ -2,7 +2,8 @@ import React, { Component } from 'react'
 import {Link} from 'react-router-dom'
 import '../style/css/style.css'
 import Popup from "reactjs-popup";
-import EmailTemplate from '../image/06EmailTemplate.jpg'
+import Submitservice from '../image/05SubmitServiceOrder_02.jpg'
+
 
 class OrderForm extends Component {
     render() {
@@ -96,7 +97,7 @@ class OrderForm extends Component {
                         // </Link>
                     } modal>
                         {close => (
-                            <img src={EmailTemplate} hight="100%" width="90%" alt="" />
+                            <Link to="/order/submit/email"><img src={Submitservice} hight="100%" width="90%" alt="" /></Link>
                            
                         )}
                           </Popup>

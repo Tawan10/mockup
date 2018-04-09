@@ -16,9 +16,17 @@ COPY . /app/
 # as well.
 # This command will also cat the npm-debug.log file after the
 # build, if it exists.
+EXPOSE 8080
+
+
 RUN npm install --unsafe-perm || \
   ((if [ -f npm-debug.log ]; then \
       cat npm-debug.log; \
     fi) && false)
+RUN npm run build
 
-CMD npm start
+RUN npm install yarn
+RUN yarn global add serve
+  
+
+CMD serve -s build
