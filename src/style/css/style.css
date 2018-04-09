@@ -243,3 +243,20 @@ margin-left: 15%;
 .red-style{
     background: #ec2b3c;
 }
+
+.centerMarker {
+    width: 60px;
+    background: url(./not-in-service-center-pointer.png) no-repeat center;
+    height: 60px;
+    top:50%;
+    left: 50%;
+    margin-top: -30px;
+    margin-left: -30px;
+    position:  absolute;
+}
+.centerMarker.out {
+    background: url(./not-in-service-center-pointer.png) no-repeat center;
+}
+.centerMarker.in {
+    background: url(./in-service-center-pointer.png) no-repeat center;
+}
