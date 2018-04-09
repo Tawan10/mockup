@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { Link, BrowserRouter, Route, Switch } from 'react-router-dom'
 import ReactMapboxGl, { Layer, Feature } from "react-mapbox-gl"
 
+import MyFancyComponent from './map2'
 import Emailtemplate from './emailtemplate'
 import OrderForm from './order_form'
 import SubmitForm from './submitform'
@@ -21,7 +22,7 @@ export default class App extends Component {
           <Route path="/order/submit/email" component={Emailtemplate} />
           <Route path="/order/submit" component={SubmitForm} />
           <Route path="/order/new" component={OrderForm} />
-          <Route path="/" component={Maps} />
+          <Route path="/" component={MyFancyComponent} />
         </Switch>
   
       </div>
