@@ -9,7 +9,7 @@ class SearchBar extends Component {
             <div className="id">
                 <nav className="wapper-header navbar navbar-light bg-light justify-content-start">
                 <div className="logo-box">
-                    <img src={Logo} style={{width:" 25%", height: "25%"}}/>
+                    <img src={Logo} style={{width:" 100%", height: "100%"}}/>
                 </div>
                     <a className="navbar-brand text-fiber p-2">Fiber To Your Home</a>
                     <form className="form-inline ml-auto p-2">

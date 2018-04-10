@@ -9,6 +9,7 @@ const Map = ReactMapboxGl({
     "pk.eyJ1Ijoic2hhbmEwNDQiLCJhIjoiY2pmbWdudnRuMHRteTMybnYzZ2ZpNmo4cyJ9.uksnzY30vBr2sJeC1SjHkg"
 });
 
+
 class OrderForm extends Component {
   constructor(props) {
     super(props);
@@ -48,55 +49,92 @@ class OrderForm extends Component {
                 <h3 className="content-h3">
                   Choose your Fiber service packages
                 </h3>
-                <div className="radio-wapper">
-                  <form>
-                    <label className="radio-box">
-                      <input
-                        type="radio"
-                        name="gender"
-                        value="Plan 1 70 Mbps"
-                        className="this-radio"
-                      />
-                      <p className="text-radio">Plan 1 70 Mbps</p>
 
-                      <p className="sub-text-radio">FIBER Speed All-in-One</p>
-                    </label>
+                <div className="radio-wapper ">
+                  <form className="row d-flex ">
+                  
+                    <div className="radio-box col-xs-12 col-md-6 d-flex justify-content-start ">
+                      <label className="">
+                      <div className="all-input p-2">
+                        <input
+                            type="radio"
+                            name="gender"
+                            value="Plan 1 70 Mbps"
+                            className=""
+                        />
+                      </div>
+                  
+                          <div className=" all-text p-2">
+                          <p className="text-radio">Plan 1 70 Mbps</p>
+                          <p className="sub-text-radio">FIBER Speed All-in-One</p>
+                          
+                         </div>
 
-                    <label className="radio-box">
-                      <input
-                        type="radio"
-                        name="gender"
-                        value="Plan 1 70 Mbps"
-                        className="this-radio"
-                      />
-                      <p className="text-radio">Plan 1 70 Mbps</p>
-                      <p className="sub-text-radio">FIBER Speed All-in-One</p>
-                    </label>
+                      </label>
+                    </div>
+                    <div className="radio-box col-xs-12 col-md-6 d-flex justify-content-start ">
+                      <label className="">
+                      <div className="all-input p-2">
+                        <input
+                            type="radio"
+                            name="gender"
+                            value="Plan 1 70 Mbps"
+                            className=""
+                        />
+                      </div>
+                  
+                          <div className=" all-text p-2">
+                          <p className="text-radio">Plan 1 70 Mbps</p>
+                          <p className="sub-text-radio">FIBER Speed All-in-One</p>
+                          
+                         </div>
 
-                    <label className="radio-box">
-                      <input
-                        type="radio"
-                        name="gender"
-                        value="Plan 2 70 Mbps"
-                        className="this-radio"
-                      />
-                      <p className="text-radio">Plan 2 70 Mbps</p>
-                      <p className="sub-text-radio">
-                        FIBER Speed Entertainment
-                      </p>
-                    </label>
+                      </label>
+                    </div>
+                    <div className="radio-box col-xs-12 col-md-6 d-flex justify-content-start ">
+                      <label className="">
+                      <div className="all-input p-2">
+                        <input
+                            type="radio"
+                            name="gender"
+                            value="Plan 1 70 Mbps"
+                            className=""
+                        />
+                      </div>
+                  
+                          <div className=" all-text p-2">
+                          <p className="text-radio">Plan 1 70 Mbps</p>
+                          <p className="sub-text-radio">FIBER Speed All-in-One</p>
+                          
+                         </div>
 
-                    <label className="radio-box">
-                      <input
-                        type="radio"
-                        name="gender"
-                        value="Plan 3 35 Mbps"
-                        className="this-radio"
-                      />
-                      <p className="text-radio">Plan 3 35 Mbps</p>
-                      <p className="sub-text-radio">FIBER Speed Home</p>
-                    </label>
+                      </label>
+                    </div>
+                    <div className="radio-box col-xs-12 col-md-6 d-flex justify-content-start ">
+                      <label className="">
+                      <div className="all-input p-2">
+                        <input
+                            type="radio"
+                            name="gender"
+                            value="Plan 1 70 Mbps"
+                            className=""
+                        />
+                      </div>
+                  
+                          <div className=" all-text p-2">
+                          <p className="text-radio">Plan 1 70 Mbps</p>
+                          <p className="sub-text-radio">FIBER Speed All-in-One</p>
+                          
+                         </div>
+
+                      </label>
+                    </div>
+
+
+                    
+
                   </form>
+
                 </div>
                 <h3 className="content-h3">Please provide information</h3>
                 <div className="input-all">
