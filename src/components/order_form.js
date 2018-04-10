@@ -103,8 +103,8 @@ class OrderForm extends Component {
                       </div>
                   
                           <div className=" all-text p-2">
-                          <p className="text-radio">Plan 1 70 Mbps</p>
-                          <p className="sub-text-radio">FIBER Speed All-in-One</p>
+                          <p className="text-radio">Plan  50 Mbps</p>
+                          <p className="sub-text-radio">FIBER Speed Entertainment</p>
                           
                          </div>
 
@@ -122,8 +122,8 @@ class OrderForm extends Component {
                       </div>
                   
                           <div className=" all-text p-2">
-                          <p className="text-radio">Plan 1 70 Mbps</p>
-                          <p className="sub-text-radio">FIBER Speed All-in-One</p>
+                          <p className="text-radio">Plan 3 35 Mbps</p>
+                          <p className="sub-text-radio">FIBER Speed Home</p>
                           
                          </div>
 
