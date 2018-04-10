@@ -134,8 +134,8 @@ class OrderForm extends Component {
                     
 
                   </form>
-
                 </div>
+
                 <h3 className="content-h3">Please provide information</h3>
                 <div className="input-all">
                   <form action="#">
@@ -158,6 +158,7 @@ class OrderForm extends Component {
                           />
                         </div>
                       </div>
+                      
                       <div className="address">
                         <p className="add-text"> Address:</p>
                         <input
